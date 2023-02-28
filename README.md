@@ -1,0 +1,1 @@
+## Zadania z inteligencji obliczeniowej
