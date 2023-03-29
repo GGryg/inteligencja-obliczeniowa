@@ -32,3 +32,5 @@ y_pred = gnb.fit(train_input, train_class).predict(test_input)
 print("Number of mislabeled points out of a total %d points : %d" % (test_set.shape[0], (test_class != y_pred).sum()))
 print(42/45*100)
 print(confusion_matrix(y_true, y_pred))
+
+# Najlepiej wypadają k-najbliższych sąsiadów
