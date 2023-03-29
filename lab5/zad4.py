@@ -13,7 +13,7 @@ test_input = test_set[:, 0:4]
 train_class = train_set[:, 4]
 train_input = train_set[:, 0:4]
 
-clf = KNeighborsClassifier(n_neighbors=11)
+clf = KNeighborsClassifier(n_neighbors=3)
 clf = clf.fit(train_input, train_class)
 
 print(clf.score(test_input, test_class)*100)
