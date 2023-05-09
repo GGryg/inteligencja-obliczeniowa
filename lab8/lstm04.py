@@ -51,9 +51,11 @@ model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
 #filename = "big-token-model-30-2.3772.hdf5"
 #model.load_weights(filename)
+filename = "big-token-model-04-5.9237.hdf5"
+model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 # define the checkpoint
-filepath="big-token-model-{epoch:02d}-{loss:.4f}.hdf5"
+filepath="big-token-model-{epoch:02d}-{loss:.4f}2.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 # fit the model

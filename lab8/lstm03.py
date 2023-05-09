@@ -44,7 +44,9 @@ model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
 # load the network weights
 #filename = "weights-improvement-41-1.8138.hdf5"
-filename = "weights-improvement-04-2.7458.hdf5"
+# b
+#filename = "weights-improvement-04-2.7458.hdf5"
+filename = "weights-improvement-04-2.53932.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 # pick a random seed
